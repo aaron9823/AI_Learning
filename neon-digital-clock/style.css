@@ -1,0 +1,22 @@
+body {
+    background-color: #000;
+    color: #0ff;
+    font-family: 'Digital', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.clock {
+    font-size: 5rem;
+    text-shadow: 
+        0 0 5px #0ff, 
+        0 0 10px #0ff, 
+        0 0 20px #0ff, 
+        0 0 40px #00f, 
+        0 0 80px #00f, 
+        0 0 100px #00f, 
+        0 0 150px #00f;
+}
