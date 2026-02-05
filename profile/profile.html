@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business card</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-wrapper" id="cardWrapper">
+            <div class="window" id="card">
+                <div class="window-header">
+                    <div class="window-buttons">
+                        <div class="btn red"></div>
+                        <div class="btn yellow"></div>
+                        <div class="btn green"></div>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="terminal-card">
+                        <span class="bracket">{</span>
+                        <div class="card-line">
+                            <span class="key">"name"</span><span class="colon">:</span>
+                            <span class="string">"Aaron Lee"</span><span class="comma">,</span>
+                        </div>
+                        <div class="card-line">
+                            <span class="key">"title"</span><span class="colon">:</span>
+                            <span class="string">"Full Stack Programmer"</span><span class="comma">,</span>
+                        </div>
+                        <div class="card-line">
+                            <span class="key">"email"</span><span class="colon">:</span>
+                            <span class="string">"aaronlee9823@gmail.com"</span><span class="comma">,</span>
+                        </div>
+                        <div class="card-line">
+                            <span class="key">"phone"</span><span class="colon">:</span>
+                            <span class="string">"437-982-9823"</span>
+                        </div>
+                        <span class="bracket">}</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="window card-back" id="cardBack">
+                <div class="window-header">
+                    <div class="window-buttons">
+                        <div class="btn red"></div>
+                        <div class="btn yellow"></div>
+                        <div class="btn green"></div>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <div class="terminal-card">
+                        <span class="bracket">{</span>
+                        <div class="card-line">
+                            <span class="key">"website"</span><span class="colon">:</span>
+                            <div class="qr-code-container" id="qrcode"></div>
+                        </div>
+                        <span class="bracket">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

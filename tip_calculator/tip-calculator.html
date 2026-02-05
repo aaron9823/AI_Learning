@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팁 계산기</title>
+    <link rel="stylesheet" href="tip-calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tip-card">
+            <h1 class="title">팁 계산기</h1>
+            
+            <div class="form-group">
+                <label for="mealPrice">음식 가격</label>
+                <div class="input-wrapper">
+                    <span class="currency">$</span>
+                    <input type="number" id="mealPrice" placeholder="0.00" min="0" step="0.01">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>팁 퍼센트 선택</label>
+                <div class="tip-buttons">
+                    <button class="tip-btn" data-tip="10">10%</button>
+                    <button class="tip-btn" data-tip="15">15%</button>
+                    <button class="tip-btn" data-tip="20">20%</button>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="results">
+                <div class="result-row">
+                    <span class="result-label">팁 금액:</span>
+                    <span class="result-value" id="tipAmount">$0.00</span>
+                </div>
+                <div class="result-row total">
+                    <span class="result-label">최종 가격:</span>
+                    <span class="result-value" id="totalPrice">$0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tip-calculator.js"></script>
+</body>
+</html>
