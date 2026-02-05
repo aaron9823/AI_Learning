@@ -1,2 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* No new file content provided. */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.tip-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.food-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.food-btn {
+    padding: 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.food-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.food-btn:hover {
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.food-btn.active {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.food-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+}
+
+.food-price {
+    font-size: 11px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.food-btn.active ~ .food-label {
+    color: #667eea;
+    font-weight: 700;
+}
+
+.food-btn.active ~ .food-price {
+    color: #667eea;
+}
+
+.tip-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.tip-btn {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tip-btn:hover {
+    border-color: #667eea;
+    color: #667eea;
+}
+
+.tip-btn.active {
+    background: #667eea;
+    border-color: #667eea;
+    color: white;
+}
+
+.divider {
+    height: 2px;
+    background: #f0f0f0;
+    margin: 24px 0;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-label {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.result-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.result-row.total {
+    padding-top: 8px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.result-row.total .result-label {
+    color: #333;
+    font-weight: 600;
+}
+
+.result-row.total .result-value {
+    font-size: 24px;
+    color: #667eea;
+}
