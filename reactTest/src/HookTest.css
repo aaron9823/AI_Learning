@@ -1,0 +1,185 @@
+.tip-calculator {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.tip-calculator h1 {
+  text-align: center;
+  color: #333;
+}
+
+.tip-calculator h2 {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.food-buttons,
+.tip-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.food-btn,
+.tip-btn {
+  flex: 1;
+  min-width: 100px;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.food-btn:hover,
+.tip-btn:hover {
+  border-color: #667eea;
+  background-color: #f0f8ff;
+}
+
+.food-btn.active,
+.tip-btn.active {
+  border-color: #667eea;
+  background-color: #667eea;
+  color: white;
+}
+
+.divider {
+  margin: 20px 0;
+  border: none;
+  border-top: 2px solid #ddd;
+}
+
+.results-section {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.result-item label {
+  font-weight: bold;
+  color: #555;
+}
+
+.result-item span {
+  color: #667eea;
+}
+
+.result-item.total {
+  font-size: 18px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.result-item.total label {
+  color: #333;
+}
+
+.result-item.total span {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.counter {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 2px solid #667eea;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.counter h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.counter-display {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+}
+
+.count-number {
+  font-size: 60px;
+  font-weight: bold;
+  color: #667eea;
+  margin: 0;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.counter-btn {
+  flex: 1;
+  max-width: 150px;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.increase-btn {
+  background-color: #28a745;
+}
+
+.increase-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.decrease-btn {
+  background-color: #dc3545;
+}
+
+.decrease-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.reset-btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #667eea;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #667eea;
+  color: white;
+}
