@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const frontCard = document.getElementById('card');
     const backCard = document.getElementById('cardBack');
     
+    // 디버그: 요소들이 제대로 로드되었는지 확인
+    console.log('cardWrapper:', cardWrapper);
+    console.log('frontCard:', frontCard);
+    console.log('backCard:', backCard);
+    
+    if (!cardWrapper || !frontCard || !backCard) {
+        console.error('Required DOM elements not found');
+        return;
+    }
+    
     let isFlipped = false;
     
     // 처음에 앞면 표시
